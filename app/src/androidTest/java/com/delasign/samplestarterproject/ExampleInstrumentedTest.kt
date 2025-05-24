@@ -1,4 +1,4 @@
-package sh.ld2.example
+package digital.dutton.example
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

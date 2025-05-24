@@ -1,4 +1,4 @@
-package sh.ld2.example
+package digital.dutton.example
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

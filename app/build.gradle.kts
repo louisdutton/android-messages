@@ -8,7 +8,7 @@ val versionMinor = 0
 val versionPatch = 0
 val versionBuild = 0 // Bump for dogfood builds, public betas, etc.
 
-val bundleId = "sh.ld2.example"
+val bundleId = "digital.dutton.example"
 
 android {
   namespace = bundleId

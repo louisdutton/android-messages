@@ -6,7 +6,7 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 #-Make sure that the UIContent doesnt get touched by the proguard
--keep class sh.ld2.example.models.languageContent.* { *; }
+-keep class digital.dutton.example.models.languageContent.* { *; }
 
 
 # If your project uses WebView with JS, uncomment the following
