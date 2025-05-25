@@ -21,12 +21,12 @@
           };
         };
 
-        platformVersion = "34";
-        buildToolsVersion = "34.0.0";
+        platformVersion = "35";
+        buildToolsVersion = "35.0.0";
         systemImageType = "default";
         androidPkgs = pkgs.androidenv.composeAndroidPackages {
           buildToolsVersions = [buildToolsVersion];
-          platformVersions = [platformVersion "28"];
+          platformVersions = [platformVersion];
           systemImageTypes = [systemImageType];
           useGoogleAPIs = false;
           includeSystemImages = true;
@@ -47,10 +47,9 @@
           };
 
           packages.emulator = androidenv.emulateApp {
-            inherit systemImageType;
+            inherit systemImageType platformVersion;
             name = "example";
-            abiVersion = "arm64-v8a"; # armeabi-v7a, mips, x86, x86_64
-            platformVersion = "34";
+            abiVersion = "arm64-v8a"; # arm64-v8a or x86_64
             # TODO: install app (difficult as the apk isn't tracked in git)
             # app = ./example.apk;
             # package = "digital.dutton.exampleapp";
