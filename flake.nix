@@ -39,6 +39,8 @@
               androidSdk
               gradle
               jdk
+              nixd
+              alejandra
             ];
 
             ANDROID_HOME = "${androidSdk}/libexec/android-sdk";
